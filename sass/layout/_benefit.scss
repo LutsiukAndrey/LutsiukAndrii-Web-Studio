@@ -1,61 +1,103 @@
-.about-container {
-  display: flex;
-  justify-content: space-between;
-}
+// .about-container {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.about-left-side,
-.about-right-side {
-  flex-basis: calc((100% - 30px) / 2);
-}
+// .about-left-side,
+// .about-right-side {
+//   flex-basis: calc((100% - 30px) / 2);
+// }
 
-.about-right-side {
-  padding-left: 34px;
-}
+// .about-right-side {
+//   padding-left: 34px;
+// }
 
-.about-gallery {
-  display: flex;
-  justify-content: space-between;
-}
+// .about-gallery {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.about-section-description {
-  margin-bottom: 20px;
-}
+// .about-section-description {
+//   margin-bottom: 20px;
+// }
 
-.about-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.86;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color-theme-light);
-  margin-bottom: 40px;
+// .about-text {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.86;
+//   letter-spacing: 0.02em;
+//   color: var(--primary-text-color-theme-light);
+//   margin-bottom: 40px;
+// }
+
+//1111111111111111111111111111111111111111
+.ben-list-icon {
+  width: 70px;
+  height: 70px;
 }
-.ben-list-item {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+.ben__list {
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    gap: 30px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+
+  // @media screen and (min-width: 768px) {
+
+  // }
 }
-.ben-list-block {
-  max-width: 270px;
-  /* width:  calc((100% - 90px) / 4); */
+.ben__item {
+  margin-left: auto;
+  margin-right: auto;
+  // text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  // @media screen and (max-width: 767px) {
+  //   text-align: center;
+  // }
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .benefit-title {
+  text-align: center;
   color: var(--title-text-color);
 
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .ben-list-img {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+
+  // display: flex;
+  // justify-content: center;
   padding: 25px 100px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-.ben-list-icon {
-  width: 70px;
-  height: 70px;
-}
+// .benefit__content {
+//   @media screen and( max-width:768px) {
+//     text-align: left;
+//   }
+// }

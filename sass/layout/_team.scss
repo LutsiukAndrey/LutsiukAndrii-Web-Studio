@@ -1,28 +1,55 @@
-.team-section {
+.team {
   background-color: var(--btn-bcg);
 }
-.team-contanier {
+.team__picture img {
+  max-width: 100%;
 }
 
-.team-list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+.team__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 }
-.team-block {
-  max-width: 270px;
-  /* width: calc((100% - 90px) / 4); */
+.team__item {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 450px;
   background-color: var(--bcg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 479px) {
+    width: 270px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
-.teammate-photo {
-}
-.teammate-text-wraper {
+/* width: calc((100% - 90px) / 4); */
+
+.team-text {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   text-align: center;
+  @media screen and( min-width:768px) {
+    padding-bottom: 30px;
+  }
 }
 .teammate-name {
   color: var(--title-text-color);
@@ -32,12 +59,15 @@
   margin-bottom: 10px;
 }
 
-.teammate-occupation {
+.team-desc {
   font-size: 16px;
   line-height: 1.18;
   margin-bottom: 16px;
 }
-.team-social-list {
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.social__list {
   display: flex;
   justify-content: center;
   padding-left: 10px;
@@ -45,7 +75,7 @@
   column-gap: 10px;
 }
 
-.team-social-list-icon {
+.social-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
@@ -59,8 +89,8 @@
   justify-content: center;
   align-items: center;
   transition: var(--transition-dur-and-func);
-  &:hover .team-social-list-icon,
-  &:focus .team-social-list-icon {
+  &:hover .social-icon,
+  &:focus .social-icon {
     fill: var(--bcg-color);
   }
   &:hover,

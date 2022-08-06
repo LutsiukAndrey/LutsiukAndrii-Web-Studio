@@ -1,11 +1,17 @@
 .ocupation {
   padding-top: 0px;
+
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
-.ocupation__block-group {
+.ocupation__group {
   position: relative;
 }
-.ocupation__block-list {
+.ocupation__item {
   width: calc((100% - 60px) / 3);
   /* max-width: 370px; */
 }
@@ -14,7 +20,7 @@
   gap: 30px;
   flex-wrap: wrap;
 }
-.ocupation__block-deckription {
+.ocupation__deckription {
   position: absolute;
   bottom: 0;
   left: 0;
