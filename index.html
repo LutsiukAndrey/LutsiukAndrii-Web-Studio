@@ -30,11 +30,11 @@
           <ul class="list menu">
             <li class="menu-item">
               <a href="./index.html" class="link menu-link link-active">Студия</a>
-            </li>
-            <li class="menu-item">
-              <a href="./portfolio.html" class="link menu-link">Портфолио</a>
-            </li>
-            <li class="menu-item"><a href="" class="link menu-link">Контакты</a></li>
+            </li> -->
+    <li class="menu-item">
+      <a href="./portfolio.html" class="link menu-link">Портфолио</a>
+    </li>
+    <!-- <li class="menu-item"><a href="" class="link menu-link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="list contact">
@@ -169,16 +169,18 @@
 
           <ul class="list team__list">
             <li class="team__item">
-              <img
-                class="photo thumb-team"
-                srcset="
-                  ./images/mobile-product-designer.jpg 1x,
-                  ./images/mobile-product-designer-2x.jpg 2x
-                "
-                src="./images/mobile-product-designer.jpg"
-                alt="фото Игоря Демьяненко"
-                width="450"
-              />
+              <picture class="team__picture">
+                <img
+                  class="photo thumb-team"
+                  srcset="
+                    ./images/mobile-product-designer.jpg    1x,
+                    ./images/mobile-product-designer-2x.jpg 2x
+                  "
+                  src="./images/mobile-product-designer.jpg"
+                  alt="фото Игоря Демьяненко"
+                  width="450"
+                />
+              </picture>
               <div class="team-text">
                 <h3 class="teammate-name">Игорь Демьяненко</h3>
                 <p lang="en" class="team-desc">Product Designer</p>
@@ -216,16 +218,18 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="photo thumb-team"
-                srcset="
-                  ./images/mobile-frontend-developer.jpg 1x,
-                  ./images/mobile-frontend-developer-2x.jpg 2x
-                "
-                src="./images/mobile-frontend-developer.jpg"
-                alt="фото Ольга Репина"
-                width="450"
-              />
+              <picture class="team__picture">
+                <img
+                  class="photo thumb-team"
+                  srcset="
+                    ./images/mobile-frontend-developer.jpg    1x,
+                    ./images/mobile-frontend-developer-2x.jpg 2x
+                  "
+                  src="./images/mobile-frontend-developer.jpg"
+                  alt="фото Ольга Репина"
+                  width="450"
+                />
+              </picture>
               <div class="team-text">
                 <h3 class="teammate-name">Ольга Репина</h3>
                 <p lang="en" class="team-desc">Frontend Developer</p>
@@ -263,15 +267,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="photo thumb-team"
-                srcset="./images/mobile-marketing.jpg 1x, 
-                ./images/mobile-marketing-2x.jpg 2x
-                "
-                src="./images/mobile-marketing.jpg"
-                alt="фото Николай Тарасов"
-                width="450"
-              />
+              <picture class="team__picture">
+                <img
+                  class="photo thumb-team"
+                  srcset="./images/mobile-marketing.jpg 1x, ./images/mobile-marketing-2x.jpg 2x"
+                  src="./images/mobile-marketing.jpg"
+                  alt="фото Николай Тарасов"
+                  width="450"
+                />
+              </picture>
               <div class="team-text">
                 <h3 class="teammate-name">Николай Тарасов</h3>
                 <p lang="en" class="team-desc">Marketing</p>
@@ -311,15 +315,13 @@
             <li class="team__item">
               <picture class="team__picture">
                 <img
-                class="photo thumb-team"
-                srcset="
-                  ./images/mobile-ui-designer.jpg 1x,                   
-                  ./images/mobile-ui-designer-2x.jpg 2x
-                "
-                src="./images/mobile-ui-designer.jpg"
-                alt="фото Михаил Ермаков"
-                width="450"
-              />
+                  class="photo thumb-team"
+                  srcset="./images/mobile-ui-designer.jpg 1x, ./images/mobile-ui-designer-2x.jpg 2x"
+                  src="./images/mobile-ui-designer.jpg"
+                  alt="фото Михаил Ермаков"
+                  width="450"
+                />
+              </picture>
               <div class="team-text">
                 <h3 class="teammate-name">Михаил Ермаков</h3>
                 <p lang="en" class="team-desc">UI Designer</p>
@@ -360,46 +362,46 @@
         </div>
       </section>
       <!-- !!!!!!!!!!!!!!!!!!ОСТОЯННІЕ КЛИЕНТЫ!!!!!!!!! -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients list">
-            <li class="clients-list">
+            <li class="clients__item">
               <a href="" class="client-links">
                 <svg class="clients-icon">
                   <use href="./images/symbol-defs.svg#icon-Logo"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list">
+            <li class="clients__item">
               <a href="" class="client-links">
                 <svg class="clients-icon">
                   <use href="./images/symbol-defs.svg#icon-Logo-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list">
+            <li class="clients__item">
               <a href="" class="client-links">
                 <svg class="clients-icon">
                   <use href="./images/symbol-defs.svg#icon-Logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list">
+            <li class="clients__item">
               <a href="" class="client-links">
                 <svg class="clients-icon">
                   <use href="./images/symbol-defs.svg#icon-Logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list">
+            <li class="clients__item">
               <a href="" class="client-links">
                 <svg class="clients-icon">
                   <use href="./images/symbol-defs.svg#icon-Logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list">
+            <li class="clients__item">
               <a href="" class="client-links">
                 <svg class="clients-icon">
                   <use href="./images/symbol-defs.svg#icon-Logo-5"></use>
@@ -408,11 +410,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Футер -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-section container">
         <div class="footer-left">
           <div class="footer-logo-addree">
@@ -503,7 +505,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-section">

@@ -1,3 +1,18 @@
+.footer-section {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    justify-content: space-between;
+  }
+}
+.footer-left {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .footer-logo {
   color: var(--logo-footer);
   margin-bottom: 20px;
@@ -6,10 +21,10 @@
   margin-bottom: 8px;
   display: block;
   &:nth-child(3) {
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
   & .adress {
-    color: var(--logo-footer);
+    color: #fff;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -40,20 +55,17 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-section {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.footer-left {
-  display: flex;
-}
 
 .footer-social {
-  padding: 0%;
-  margin-left: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0%;
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
+
 .footer-title {
   text-transform: uppercase;
   color: var(--bcg-color);
@@ -62,6 +74,7 @@
 
 .social-list {
   display: flex;
+  justify-content: center;
 }
 
 .footer-social-list-item:not(:last-child) {
@@ -92,6 +105,9 @@
 }
 .suscribe-btn {
   display: flex;
+
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 29px;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -113,19 +129,32 @@
   color: var(--bcg-color);
 }
 .footer-subscribe-wrapper {
-  display: flex;
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
 }
 
 .footer-subscribe-input {
-  width: 358px;
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  background-color: transparent;
+  transition: bacground-color var(--transition-dur-and-func);
+  width: 100%;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
 
   border-radius: 4px;
-  margin-right: 12px;
-  padding: 15px 16px;
-  background-color: transparent;
-  transition: bacground-color var(--transition-dur-and-func);
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 .footer-subscribe-input:focus {
   outline: transparent;

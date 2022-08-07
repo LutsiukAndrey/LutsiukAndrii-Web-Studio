@@ -12,6 +12,9 @@
     flex-wrap: wrap;
   }
 }
+.team__picture img {
+  width: 100%;
+}
 .team__item {
   margin-left: auto;
   margin-right: auto;
@@ -25,9 +28,9 @@
     margin-bottom: 30px;
   }
 
-  @media screen and (max-width: 479px) {
-    width: 270px;
-  }
+  // @media screen and (max-width: 479px) {
+  //   width: 270px;
+  // }
 
   @media screen and (min-width: 480px) {
     width: 450px;
