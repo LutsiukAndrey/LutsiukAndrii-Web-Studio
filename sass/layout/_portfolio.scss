@@ -44,7 +44,7 @@
   line-height: 2;
 }
 .portfolio-list {
-  justify-content: center;
+  justify-content: flex-start;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -57,6 +57,8 @@
   width: 100%;
 }
 .portfolio-icons {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin-bottom: 30px;
 
@@ -77,6 +79,7 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  flex: 1;
 }
 .portfolio-feed-group {
   position: relative;

@@ -22,7 +22,7 @@
 
   <body>
     <!-- хедер -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__section container">
         <nav class="header-nav">
           <a href="./index.html" lang="en" class="logo link header__logo">
@@ -38,26 +38,28 @@
             <li class="menu-item"><a href="" class="link menu-link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="list contact">
-          <li class="contact__list">
-            <a href="mailto:info@devstudio.com" class="contact-link link">
-              <svg class="contact-mail">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact__list">
-            <a href="tel:+380961111111" class="contact-link link">
-              <svg class="contact-tel">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <div class="header__right">
+          <ul class="list contact">
+            <li class="contact__list">
+              <a href="mailto:info@devstudio.com" class="contact-link link">
+                <svg class="contact-mail">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contact__list">
+              <a href="tel:+380961111111" class="contact-link link">
+                <svg class="contact-tel">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </header> -->
+    </header>
     <!-- наполнение -->
     <main>
       <section class="portfolio-page section">
@@ -344,7 +346,7 @@
               <input
                 id="subscribe"
                 class="footer-subscribe-input"
-                type="mail"
+                type="email"
                 name="user-email"
                 placeholder="E-mail"
                 required
