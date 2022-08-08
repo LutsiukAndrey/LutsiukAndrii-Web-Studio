@@ -107,15 +107,43 @@ button {
   border-bottom: 1px solid #ececec;
 }
 
+.header__section {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
 .header__logo {
   color: var(--logo-header);
-  margin-top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .menu_burger {
   border: transparent;
   background-color: var(--bcg-color);
-  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .menu_burger {
+    display: none;
+  }
 }
 
 .logo-web {
@@ -125,6 +153,14 @@ button {
 .menu__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .menu {
@@ -136,14 +172,107 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.menu-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  position: relative;
+  transition: var(--transition-dur-and-func);
+}
+.menu-link:hover, .menu-link:focus {
+  color: var(--accent-color);
+}
+.menu-link::after {
+  content: "";
+  width: 0px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(34px);
+  transition: var(--transition-dur-and-func);
+}
+
+.link-active {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.link-active::after,
+.menu-link:hover::after {
+  width: 100%;
+}
+
 .contact {
   display: none;
 }
 @media screen and (min-width: 768px) {
   .contact {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.contact__list {
+  display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .contact__list:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  transition: var(--transition-dur-and-func);
+  display: flex;
+  align-items: center;
+}
+.contact-link:hover, .contact-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-mail {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.contact-tel {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .hero {
@@ -948,8 +1077,8 @@ button {
 }
 
 .modal-section {
+  width: 100vw;
   max-width: 450px;
-  max-height: 610px;
   background-color: var(--bcg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1015,8 +1144,9 @@ button {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
+  background-color: #fff;
   z-index: 9999;
   transition: var(--transition-dur-and-func);
 }
@@ -1029,12 +1159,12 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 480px;
+  width: 100vw;
+  max-width: 450px;
   height: 100%;
   font-size: 40px;
   line-height: 1.17;
   background-color: var(--bcg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -1104,8 +1234,13 @@ button {
   color: var(--primary-text-color);
 }
 
+.menu__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .menu_social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu__social-link {
@@ -1114,7 +1249,6 @@ button {
   font-size: 18px;
   line-height: 1.22em;
   letter-spacing: 0.02em;
-}
-.menu__social-link:not(:last-child)::after {
-  border-right: 1px solid var(--primary-text-color);
+  color: var(--accent-color);
+  padding-right: 10px;
 }/*# sourceMappingURL=main.css.map */
