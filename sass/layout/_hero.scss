@@ -13,31 +13,31 @@
 
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../images/background-sm.jpg');
+    url('../images/background-sm.jpg');
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dpx) {
-    background-image: url(../../images/background-sm@2x.jpg);
+    background-image: url(../images/background-sm@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/background-mb.jpg');
+      url('../images/background-mb.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../images/background-md@2x.jpg);
+      background-image: url(../images/background-md@2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/background-lg.jpg');
+      url('../images/background-lg.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../images/background-lg@2x.jpg);
+      background-image: url(../images/background-lg@2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
