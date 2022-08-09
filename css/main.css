@@ -861,7 +861,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .footer-title {
-    display: flex;
+    text-align: start;
   }
 }
 
