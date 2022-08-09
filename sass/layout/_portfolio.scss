@@ -44,9 +44,8 @@
   line-height: 2;
 }
 .portfolio-list {
-  justify-content: flex-start;
-
   @media screen and (min-width: 768px) {
+    justify-content: flex-start;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
