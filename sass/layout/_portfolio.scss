@@ -104,6 +104,11 @@
   width: 100%;
   height: 100%;
   padding-top: 77px;
+  @media screen and(max-width:480px) {
+    padding-top: 30px;
+    font-size: 14px;
+    line-height: 1.56em;
+  }
   @media screen and(min-width:768px) {
     padding-top: 49px;
   }
@@ -120,7 +125,7 @@
   transition: var(--transition-dur-and-func);
 }
 .portfolio-img {
-  height: 294px;
+  height: 100%;
 }
 .portfolio-text {
   font-size: 16px;

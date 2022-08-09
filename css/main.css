@@ -732,6 +732,13 @@ button {
   transform: translateY(100%);
   transition: var(--transition-dur-and-func);
 }
+@media screen and (max-width: 480px) {
+  .news-feed-overlay {
+    padding-top: 30px;
+    font-size: 14px;
+    line-height: 1.56em;
+  }
+}
 @media screen and (min-width: 768px) {
   .news-feed-overlay {
     padding-top: 49px;
@@ -744,7 +751,7 @@ button {
 }
 
 .portfolio-img {
-  height: 294px;
+  height: 100%;
 }
 
 .portfolio-text {
@@ -1208,6 +1215,9 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.close_burger:hover, .close_burger:focus {
+  background-color: #188ce8;
 }
 
 .burger__nav:not(:last-child) {

@@ -45,6 +45,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 .burger__nav {
   &:not(:last-child) {
