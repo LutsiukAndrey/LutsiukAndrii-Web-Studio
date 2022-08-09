@@ -296,7 +296,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-mb.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-md.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -687,11 +687,14 @@ button {
   .portfolio-icons {
     justify-content: flex-start;
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-icons {
     width: 370px;
+    height: 100%;
+    margin-bottom: 0;
   }
 }
 .portfolio-icons:hover .news-feed-overlay {
@@ -722,11 +725,26 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 20px;
-  padding-top: 63px;
+  padding-top: 77px;
+  padding-left: 24px;
+  padding-right: 24px;
   background-color: var(--accent-color);
   transform: translateY(100%);
   transition: var(--transition-dur-and-func);
+}
+@media screen and (min-width: 768px) {
+  .news-feed-overlay {
+    padding-top: 49px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .news-feed-overlay {
+    padding-top: 63px;
+  }
+}
+
+.portfolio-img {
+  height: 294px;
 }
 
 .portfolio-text {
