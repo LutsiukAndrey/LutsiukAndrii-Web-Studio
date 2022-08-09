@@ -75,6 +75,9 @@
   text-transform: uppercase;
   color: var(--bcg-color);
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .social-list {
@@ -140,7 +143,7 @@
 }
 
 .footer-subscribe-input {
-  color: var(--primery-text-color);
+  color: var(--primary-text-color);
   margin-bottom: 20px;
   padding: 15px 16px;
   background-color: transparent;
