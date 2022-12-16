@@ -86,7 +86,6 @@ button {
   --btn-bcg: #f5f4fa;
   --btn-white: #ffffff;
   --transition-dur-and-func: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  --background-img-radient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .visually-hidden {
